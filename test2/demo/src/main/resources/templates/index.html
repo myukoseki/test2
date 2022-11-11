@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
+xmlns:th="http://www.thymeleaf.org">
+<!--ThymeleafをHTMLファイルで使用する為-->
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+<!--ThymeleafをHTMLファイルで使用する為-->
+>
 <title>web足し算</title>
 </head>
 <body>
@@ -13,6 +17,68 @@
 		<input type="text" inputmode=decimal name="numA" value=0>
 		<!--数字を打つところ-->
 		<b>＋</b>
+		<!--太文字にしたいからbタグ-->
+		<input type="text" inputmode=decimal name="numB" value=0>
+		<!--数字を打つところ-->
+
+		<input type=submit value="送信">
+		<!--送信ボタン-->
+	</form>
+	
+	
+<head>
+<meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+<!--ThymeleafをHTMLファイルで使用する為-->
+	
+<title>web1引き算</title>
+</head>
+
+	
+	<form method="POST" action="resSubtract">
+		<input type="text" inputmode=decimal name="numA" value=0>
+		<!--数字を打つところ-->
+		<b>-</b>
+		<!--太文字にしたいからbタグ-->
+		<input type="text" inputmode=decimal name="numB" value=0>
+		<!--数字を打つところ-->
+
+		<input type=submit value="送信">
+		<!--送信ボタン-->
+	</form>
+
+<head>
+<meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+<!--ThymeleafをHTMLファイルで使用する為-->
+	
+<title>webかけ算</title>
+</head>
+
+	
+	<form method="POST" action="resMultiply">
+		<input type="text" inputmode=decimal name="numA" value=0>
+		<!--数字を打つところ-->
+		<b>×</b>
+		<!--太文字にしたいからbタグ-->
+		<input type="text" inputmode=decimal name="numB" value=0>
+		<!--数字を打つところ-->
+
+		<input type=submit value="送信">
+		<!--送信ボタン-->
+	</form>
+	
+	
+<head>
+<meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+<!--ThymeleafをHTMLファイルで使用する為-->
+	
+<title>web割り算</title>
+</head>
+
+	
+	<form method="POST" action="resDivide">
+		<input type="text" inputmode=decimal name="numA" value=0>
+		<!--数字を打つところ-->
+		<b>÷</b>
 		<!--太文字にしたいからbタグ-->
 		<input type="text" inputmode=decimal name="numB" value=0>
 		<!--数字を打つところ-->
